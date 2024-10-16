@@ -8,7 +8,7 @@ namespace PatikaBackendWeek4_DungeonAdventure
 {
     public class Goblin : Enemy
     {
-        public Goblin(string name) : base(name, 30, 10, 1)
+        public Goblin(string name) : base(name, 30, 10, 1, 30, 10)
         {
             Skills.Add(new SneackAttackSkill());
         }

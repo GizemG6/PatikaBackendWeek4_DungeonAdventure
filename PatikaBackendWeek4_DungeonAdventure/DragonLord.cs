@@ -8,7 +8,7 @@ namespace PatikaBackendWeek4_DungeonAdventure
 {
     public class DragonLord : Enemy
     {
-        public DragonLord(string name) : base(name, 500, 200, 10)
+        public DragonLord(string name) : base(name, 500, 200, 10, 500, 200)
         {
             Skills.Add(new DragonBreathSkill());
         }

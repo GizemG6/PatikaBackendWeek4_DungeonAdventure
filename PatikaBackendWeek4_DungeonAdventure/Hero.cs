@@ -8,10 +8,10 @@ namespace PatikaBackendWeek4_DungeonAdventure
 {
     public class Hero : Character
     {
-        public Hero(string name, int maxHp, int maxMp, int level) : base(name, maxHp, maxMp, level)
+        public Hero(string name, int maxHp, int maxMp, int level, int hp, int mp) : base(name, maxHp, maxMp, level, hp, mp)
         {
         }
-        public Hero(string name) : base(name, 100, 50, 1)
+        public Hero(string name) : base(name, 100, 50, 1, 100, 50)
         {
             Skills.Add(new FireballSkill());
             Skills.Add(new HealingSkill());

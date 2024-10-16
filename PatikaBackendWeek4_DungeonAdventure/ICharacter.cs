@@ -10,7 +10,7 @@ namespace PatikaBackendWeek4_DungeonAdventure
     {
         string Name { get; }
         int HP { get; set; }
-        int MaxHp { get; }
+        int MaxHP { get; }
         int MP { get; set; }
         int MaxMP { get; }
         int Level { get; }

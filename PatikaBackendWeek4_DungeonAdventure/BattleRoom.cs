@@ -9,6 +9,7 @@ namespace PatikaBackendWeek4_DungeonAdventure
     public class BattleRoom : Room
     {
         private Enemy _enemy;
+
         public event Func<Hero, Enemy, bool> OnBattle;
         public BattleRoom(string name, Enemy enemy) : base(name)
         {

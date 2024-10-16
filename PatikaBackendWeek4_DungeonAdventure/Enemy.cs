@@ -8,7 +8,7 @@ namespace PatikaBackendWeek4_DungeonAdventure
 {
     public abstract class Enemy : Character
     {
-        protected Enemy(string name, int hp, int mp, int level) : base(name, hp, mp, level)
+        protected Enemy(string name, int maxHp, int maxMp, int level, int hp, int mp) : base(name, maxHp, maxMp, level, hp, mp)
         {
         }
         public abstract void SpecialMove(Character character);

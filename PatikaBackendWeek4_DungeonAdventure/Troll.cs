@@ -8,7 +8,7 @@ namespace PatikaBackendWeek4_DungeonAdventure
 {
     public class Troll : Enemy
     {
-        public Troll(string name) : base(name, 100, 20, 3)
+        public Troll(string name) : base(name, 100, 20, 3, 100, 20)
         {
             Skills.Add(new SmashSkill());
         }

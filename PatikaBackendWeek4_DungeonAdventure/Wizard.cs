@@ -8,7 +8,7 @@ namespace PatikaBackendWeek4_DungeonAdventure
 {
     public class Wizard : Enemy
     {
-        public Wizard(string name) : base(name, 50, 100, 5)
+        public Wizard(string name) : base(name, 50, 100, 5, 50, 100)
         {
             Skills.Add(new FireballSkill());
         }
