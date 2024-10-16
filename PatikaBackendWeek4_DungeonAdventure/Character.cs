@@ -24,6 +24,8 @@ namespace PatikaBackendWeek4_DungeonAdventure
 
         public List<Skill> Skills { get; } = new List<Skill>();
 
+        public int MaxHp => throw new NotImplementedException();
+
         protected Character(string name, int maxHp, int maxMp, int level)
         {
             Name = name;
