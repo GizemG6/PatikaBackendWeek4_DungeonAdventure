@@ -181,7 +181,7 @@ namespace PatikaBackendWeek4_DungeonAdventure
         {
             ConsoleHelper.WriteLineColored("\\n ----Kahraman Durumu----", ConsoleColor.Cyan);
             ConsoleHelper.WriteLineColored($"Seviye: {_hero.Level}", ConsoleColor.White);
-            ConsoleHelper.WriteLineColored($"HP: {_hero.HP}/{_hero.MaxHp}", ConsoleColor.Red);
+            ConsoleHelper.WriteLineColored($"HP: {_hero.HP}/{_hero.MaxHP}", ConsoleColor.Red);
             ConsoleHelper.WriteLineColored($"MP: {_hero.MP}/{_hero.MaxMP}", ConsoleColor.Blue);
             ConsoleHelper.WriteLineColored($"Deneyim: {_hero.Experience}", ConsoleColor.Yellow);
             ConsoleHelper.WriteLineColored($"Envanter: {string.Join(",", _hero.Inventory.Select(i => i.Name))}", ConsoleColor.Green);
