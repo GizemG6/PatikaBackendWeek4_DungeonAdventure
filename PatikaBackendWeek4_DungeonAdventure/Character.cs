@@ -23,6 +23,7 @@ namespace PatikaBackendWeek4_DungeonAdventure
         protected Random Random { get; } = new Random();
 
         public List<Skill> Skills { get; } = new List<Skill>();
+        public List<Item> Inventory { get; } = new List<Item>();
 
         protected Character(string name, int maxHp, int maxMp, int level)
         {
@@ -60,6 +61,24 @@ namespace PatikaBackendWeek4_DungeonAdventure
                 {
                     ConsoleHelper.WriteLineColored($"[HATA] Ooops! {Name}'in {skill.Name} becerisini kullanmak icin yeterli MP'si yok!", ConsoleColor.Red);
                 }
+            }
+        }
+
+        public void AddItemToInvertory(Item item)
+        {
+            Inventory.Add(item);
+            ConsoleHelper.WriteLineColored($"[ESYA] {Name} yeni bir {item.Name} buldu!", ConsoleColor.Green);
+        }
+        public void UseItem(Item item)
+        {
+            if(Inventory.Contains(item))
+            {
+                item.Use(this);
+                Inventory.Remove(item);
+            }
+            else
+            {
+                ConsoleHelper.WriteLineColored($"[HATA] Hay aksi! {Name}'in envanterinde {item.Name} yok.", ConsoleColor.DarkRed);
             }
         }
     }
